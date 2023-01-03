@@ -12,123 +12,73 @@
             background-image: url(8.jpg);
             background-size: cover;
         
-        } *{
-            color: black;
+        } 
+        nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
         }
-        .container{
-            width:90%;
-            margin: auto;
+
+        nav li {
+        margin: 0 10px;
         }
-        /* header başla */
-        header{
-            height: 100px;
-            border-bottom: 2px solid black;
+
+        nav a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
         }
-        header nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
+
+        nav a:hover {
+        color: #ffa500;
         }
-         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow:hidden;
-        }
-        ul li{
-            float: left;
-            padding: 10px;
-        }
-         ul li a {
-            color: black;
-            text-decoration: none;
-            transition: color .25s ease;
-        }
-        li a:hover{
-           color:rgb(29, 77, 79)
-        }
-        #menu-content{
-            position: absolute;
-            z-index: 1;
-            display:none;
-            margin-top:15px;
-            margin-left: -15px;;
-        }
-        #menu-li:hover #menu-content{
-        display:block;
-        }
-        .menu ul{
-            column-gap: 15px;
-        }
-        body  {
-            font-family: 'Poppins', sans-serif;
-            background-color:gainsboro ;  
-            background-image: url(8.jpg);
-            background-size: cover;
         
+        img {
+        width: 500px;
+        height: 500px;
+        transition: 0.3s;
         }
-        .breadcrumbs{
-            padding:10px;
-            font-family: sans-serif;
-        
+
+        img:hover {
+            opacity: 0.7;
         }
-        .breadcrumbs__item{
-            display: inline-block;
-        }
-         .breadcrumbs__item:not(:last-of-type)::after{
-            content: '\203a';
-            margin:0 5px;
-            color:#005f6a46
-        }
-         .breadcrumbs__link{
-            text-decoration: none;
-            color: #999;
-        }
-         .breadcrumbs__link:hover{
-            text-decoration:underline ;
-        }
-         .breadcrumbs__link--active{
-            color:#005f6a;
-            font-weight: 500;
+        div {
+        margin: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
         }
     </style>
-        
+                
 </head>
 <body>
-    <li><a href ="anasayfa.html"><i class="fa-solid fa-house-user"></i>ANASAYFA</a></li>
-    <li><a href ="hakkımızda.html"><i class="fa-solid fa-house-about"></i>HAKKIMIZDA</a></li>
-    <li class="menu-li">
-        <a href ="menü.html"><i class="fa-solid fa-house-menu"></i>MENÜ</a>
-        <div id="menu-content">
-            <ul>
-                <li style="display: block;"><a href ="çileklimilföy">Çilekli Milföy</a><li>
-                <li style="display: block;"><a href ="kapkek">Kapkek</a><li> 
-                <li style="display: block;"><a href ="pankek">Pankek</a><li>
-                <li style="display: block;"><a href ="ahududulutart">Ahududulu Tart</a><li>
-                <li style="display: block;"><a href ="cevizlikek">Cevizli Kek</a><li></li>
-            </ul> 
-        </div>  
-    </li>
-    <li><a href ="albüm.html">ALBÜM</a></li>
-    <li><a href ="iletişim.html">İLETİŞİM</a></li>
-
+    <nav>
+    <ul>
+      <li><a href="anasayfa.html">Anasayfa</a></li>
+      <li><a href="hakkımızda.html">Hakkımızda</a></li>
+      <li><a href="menü.html">Menü</a></li>
+      <li><a href="albüm.html">Albüm</a></li>
+      <li><a href="iletişim.html">İletişim</a></li>
+    </ul>
+  </nav>
 
       
-    <ul>
-        <li><img src="kapkek.jpg" alt="kapkek" title="Kapkek" width="200px" height="200PX" onclick="this.src='kapkek.jpg ';this.height=500;this.width=500"></li>
-        <li><img src="pankek.jpg" alt="pankek" title="Pankek" width="200px" height="200px"onclick="this.src='pankek.jpg ';this.height=500;this.width=500"></li>
-        <li><img src="ahududulutart.jpg" alt="ahududulutart" title="Ahududulu Tart" width="200px" height="200px" onclick="this.src='ahududulutart.jpg ';this.height=500;this.width=500"></li>
-        <li><img src="KestaneliKahveli-Cheesecake.jpg" alt="KestaneliKahveli-Cheesecake" title="KestaneliKahveli-Cheesecake.jpg" width="200px" height="200PX" onclick="this.src='kapkek.jpg ';this.height=500;this.width=500"></li>
-        <li><img src="MGL5560.jpg" alt="MGL5560" title="MGL5560" width="200px" height="200px"onclick="this.src='MGL5560.jpg';this.height=500;this.width=500"></li>
-        <li><img src="havuclukek.jpg" alt="havuclukek" title="havuclukek " width="200px" height="200px" onclick="this.src='havuclukek.jpg ';this.height=500;this.width=500"></li>
-        <li><img src="pasta.jpg" alt="pasta" title="Pasta" width="200px" height="200px"onclick="this.src='pasta.jpg ';this.height=500;this.width=500"></li>
-        <li><img src="cevizlikek.jpg" alt="cevizlikek" title="Cevizli Kek" width="200px" height="200px"onclick="this.src='cevizlikek.jpg ';this.height=500;this.width=500"></li>
-        <li><img src="çileklimilföy.jpg" alt="çileklimilföy" title="Çilekli Milföy" width="200px" height="200px"onclick="this.src='çileklimilföy.jpg ';this.height=500;this.width=500"></li>
-         <li class="clear"></li>
-     </ul>
+    <div style="display: flex;">
+		
+		<img src="ahududulutart.jpg" alt="ahududulutart">
+		<img src="cevizlikek.jpg" alt="cevizlikek">
+		<img src="çileklimilföy.jpg" alt="çileklimilföy">
+		<img src="havuclukek.jpg" alt="havuclukek">
+		<img src="HC_0339.jpg" alt="HC_0339">
+		<img src="kapkek.jpg" alt="kapkek">
+		<img src="KestaneliKahveli-Cheesecake.jpg" alt="KestaneliKahveli-Cheesecake">
+		<img src="MGL5560.jpg" alt="MGL5560">
+        <img src="pankek.jpg" alt="Pankek">
+		<img src="pasta.jpg" alt="pasta">
+		<img src="tatlıtablo.jpg" alt="tatlıtablo">
 
-
+	</div>
    
 </body>
 </html>

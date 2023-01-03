@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>İLETİŞİM</title>
     <style>
         body  {
             font-family: 'Poppins', sans-serif;
@@ -13,184 +13,129 @@
             background-size: cover;
         
         }
-         *{
-            color: black;
+        nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
         }
-        .container{
-            width:90%;
-            margin: auto;
+
+        nav li {
+        margin: 0 10px;
         }
-        /* header başla */
-        header{
-            height: 100px;
-            border-bottom: 2px solid black;
+
+        nav a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
         }
-        header nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
+
+        nav a:hover {
+        color: #ffa500;
         }
-         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow:hidden;
-        }
-        ul li{
-            float: left;
-            padding: 10px;
-        }
-         ul li a {
-            color: black;
-            text-decoration: none;
-            transition: color .25s ease;
-        }
-        li a:hover{
-           color:rgb(29, 77, 79)
-        }
-        #menu-content{
-            position: absolute;
-            z-index: 1;
-            display:none;
-            margin-top:15px;
-            margin-left: -15px;;
-        }
-        #menu-li:hover #menu-content{
-        display:block;
-        }
-        .menu ul{
-            column-gap: 15px;
-        }
-        body  {
-            font-family: 'Poppins', sans-serif;
-            background-color:gainsboro ;  
-            background-image: url(8.jpg);
-            background-size: cover;
         
+        h1,p{
+            text-align: center;
         }
-        .breadcrumbs{
-            padding:10px;
-            font-family: sans-serif;
-        
-        }
-        .breadcrumbs__item{
-            display: inline-block;
-        }
-         .breadcrumbs__item:not(:last-of-type)::after{
-            content: '\203a';
-            margin:0 5px;
-            color:#005f6a46
-        }
-         .breadcrumbs__link{
-            text-decoration: none;
-            color: #999;
-        }
-         .breadcrumbs__link:hover{
-            text-decoration:underline ;
-        }
-         .breadcrumbs__link--active{
-            color:#005f6a;
-            font-weight: 500;
-        }
+        div {
+			display: flex;
+			justify-content: space-between;
+			margin: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			overflow: hidden;
+		}
 
-form {
-	max-width: 600px;
-	margin: 20px auto;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 20px;
-}
+		/* Bu yorum satırı form elemanlarını etkileyecek stil tanımlamalarını içerir */
+		form {
+			max-width: 300px;
+			margin: 0;
+			padding: 20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			color: #333;
+		}
 
+		/* Bu yorum satırı form etiketlerini etkileyecek stil tanımlamalarını içerir */
+		form label {
+			display: block;
+			margin-bottom: 8px;
+		}
 
-form input:hover,
-form textarea:hover,
-form button:hover {
-	background-color: #f8f8f8;
-}
+		/* Bu yorum satırı form input ve textarea elemanlarını etkileyecek stil tanımlamalarını içerir */
+		form input, form textarea {
+			width: 100%;
+			padding: 10px;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+			color: #333;
+		}
 
+		/* Bu yorum satırı form input ve textarea elemanlarının hover durumlarını etkileyecek stil tanımlamalarını içerir */
+		form input:hover, form textarea:hover {
+			border-color: #777;
+		}
 
-form input:focus,
-form textarea:focus {
-	border: 1px solid #aaa;
-}
+		/* Bu yorum satırı form input ve textarea elemanlarının focus durumlarını etkileyecek stil tanımlamalarını içerir */
+		form input:focus, form textarea:focus {
+			border-color: #3498db;
+			outline: none;
+		}
+        		/* Bu yorum satırı form button elemanlarını etkileyecek stil tanımlamalarını içerir */
+		form button {
+			width: 100%;
+			padding: 10px;
+			box-sizing: border-box;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			color: #fff;
+			background-color: #3498db;
+			cursor: pointer;
+		}
 
-form label {
-	display: block;
-	margin-bottom: 8px;
-	font-weight: bold;
-}
+		/* Bu yorum satırı form button elemanlarının hover durumlarını etkileyecek stil tanımlamalarını içerir */
+		form button:hover {
+			background-color: #2980b9;
+		}
 
-form input[type="text"],
-form input[type="email"] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-}
-
-form textarea {
-	width: 100%;
-	height: 150px;
-	padding: 12px 20px;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	resize: none;
-}
-
-form input[type="submit"] {
-	width: 100%;
-	background-color: #4CAF50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-	background-color: #45a049;
-}
+		/* Bu yorum satırı iframe elemanlarını etk
+        		/* Bu yorum satırı iframe elemanlarını etkileyecek stil tanımlamalarını içerir */
+		iframe {
+			border: none;
+			border-radius:5px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+		}
     </style>
 </head>
 <body>
-    <li><a href ="anasayfa.html"><i class="fa-solid fa-house-user"></i>ANASAYFA</a></li>
-    <li><a href ="hakkımızda.html"><i class="fa-solid fa-house-about"></i>HAKKIMIZDA</a></li>
-    <li class="menu-li">
-        <a href ="menü.html"><i class="fa-solid fa-house-menu"></i>MENÜ</a>
-        <div id="menu-content">
-            <ul>
-                <li style="display: block;"><a href ="çileklimilföy">Çilekli Milföy</a><li>
-                <li style="display: block;"><a href ="kapkek">Kapkek</a><li> 
-                <li style="display: block;"><a href ="pankek">Pankek</a><li>
-                <li style="display: block;"><a href ="ahududulutart">Ahududulu Tart</a><li>
-                <li style="display: block;"><a href ="cevizlikek">Cevizli Kek</a><li></li>
-            </ul> 
-        </div>  
-    </li>
 
-    <li><a href ="albüm.html">ALBÜM</a></li>
-    <li><a href ="iletişim.html">İLETİŞİM</a></li>
+    <nav>
+        <ul>
+          <li><a href="anasayfa.html">Anasayfa</a></li>
+          <li><a href="hakkımızda.html">Hakkımızda</a></li>
+          <li><a href="menü.html">Menü</a></li>
+          <li><a href="albüm.html">Albüm</a></li>
+          <li><a href="iletişim.html">İletişim</a></li>
+        </ul>
+      </nav>
     <h1>İletişim</h1>
 	<p>Bize ulaşmak için lütfen aşağıdaki formu doldurun:</p>
-	<form action="/gonder" method="post">
-		<label for="isim">İsim:</label><br>
-		<input type="text" id="isim" name="isim"><br>
-		<label for="eposta">E-posta:</label><br>
-		<input type="text" id="eposta" name="eposta"><br>
-		<label for="mesaj">Mesaj:</label><br>
-		<textarea id="mesaj" name="mesaj" rows="5" cols="30"></textarea><br>
-		<input type="submit" value="Gönder">
- <!--card -->
-    <section id ="section-1">
-        <div class="card">
-            <img src="8.jpg"alt="">
-        </div>
-
-    </section>
+	<div>
+		<form>
+			<label for="name">Adınız:</label>
+			<input type="text" id="name" name="name">
+			<label for="email">E-posta adresiniz:</label>
+			<input type="email" id="email" name="email">
+			<label for="subject">Konu:</label>
+			<input type="text" id="subject" name="subject">
+			<label for="message">Mesajınız:</label>
+			<textarea id="message" name="message"></textarea>
+			<button type="submit">Gönder</button>
+		</form>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.572874452698!2d32.8540176!3d39.9190768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc48b34f1b4548f8!2sG%C3%BCzelbah%C3%A7e%2C%20Istanbul%2C%20Turkey!5e0!3m2!1sen!2sus!4v1617587024362!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </body>
 </html>

@@ -13,85 +13,28 @@
             background-size: cover;
         
         }
-        *{
-            color: black;
+        nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
         }
-        .container{
-            width:90%;
-            margin: auto;
+
+        nav li {
+        margin: 0 10px;
         }
-        /* header başla */
-        header{
-            height: 100px;
-            border-bottom: 2px solid black;
+
+        nav a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
         }
-        header nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
+
+        nav a:hover {
+        color: #ffa500;
         }
-         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow:hidden;
-        }
-        ul li{
-            float: left;
-            padding: 10px;
-        }
-         ul li a {
-            color: black;
-            text-decoration: none;
-            transition: color .25s ease;
-        }
-        li a:hover{
-           color:rgb(29, 77, 79)
-        }
-        #menu-content{
-            position: absolute;
-            z-index: 1;
-            display:none;
-            margin-top:15px;
-            margin-left: -15px;;
-        }
-        #menu-li:hover #menu-content{
-        display:block;
-        }
-        .menu ul{
-            column-gap: 15px;
-        }
-        body  {
-            font-family: 'Poppins', sans-serif;
-            background-color:gainsboro ;  
-            background-image: url(8.jpg);
-            background-size: cover;
-        
-        }
-        .breadcrumbs{
-            padding:10px;
-            font-family: sans-serif;
-        
-        }
-        .breadcrumbs__item{
-            display: inline-block;
-        }
-         .breadcrumbs__item:not(:last-of-type)::after{
-            content: '\203a';
-            margin:0 5px;
-            color:#005f6a46
-        }
-         .breadcrumbs__link{
-            text-decoration: none;
-            color: #999;
-        }
-         .breadcrumbs__link:hover{
-            text-decoration:underline ;
-        }
-         .breadcrumbs__link--active{
-            color:#005f6a;
-            font-weight: 500;
+        h1,p{
+            text-align: center;
         }
         ul {overflow:hidden;}
         ul li {float:left; margin-right:20px;}
@@ -101,34 +44,26 @@
         
 </head>
 <body>
-    <li><a href ="anasayfa.html"><i class="fa-solid fa-house-user"></i>ANASAYFA</a></li>
-    <li><a href ="hakkımızda.html"><i class="fa-solid fa-house-about"></i>HAKKIMIZDA</a></li>
-    <li class="menu-li">
-        <a href ="menü.html"><i class="fa-solid fa-house-menu"></i>MENÜ</a>
-        <div id="menu-content">
-            <ul>
-                <li style="display: block;"><a href ="çileklimilföy">Çilekli Milföy</a><li>
-                <li style="display: block;"><a href ="kapkek">Kapkek</a><li> 
-                <li style="display: block;"><a href ="pankek">Pankek</a><li>
-                <li style="display: block;"><a href ="ahududulutart">Ahududulu Tart</a><li>
-                <li style="display: block;"><a href ="cevizlikek">Cevizli Kek</a><li></li>
-            </ul> 
-        </div>  
-    </li>
-    <li><a href ="albüm.html">ALBÜM</a></li>
-    <li><a href ="iletişim.html">İLETİŞİM</a></li>
-
+    <nav>
+        <ul>
+          <li><a href="anasayfa.html">Anasayfa</a></li>
+          <li><a href="hakkımızda.html">Hakkımızda</a></li>
+          <li><a href="menü.html">Menü</a></li>
+          <li><a href="albüm.html">Albüm</a></li>
+          <li><a href="iletişim.html">İletişim</a></li>
+        </ul>
+      </nav>
 
     <div class="meta-header-inside">
         <header class="page-header layout-centered  " data-progressive-animation="page-title">
-    <h1 style="color: rgb(124, 183, 169); opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" itemprop="headline">
+    <h1 style="color: rgb(21, 15, 89); opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" itemprop="headline">
     Tatlılar
     </h1>
+    <p>Açıldığımız günden bugüne tüm tatlılarımız merkez mutfağımızdaki pastanemizde günlük olarak en kaliteli, en taze malzemelerle hazırlanmaktadır. </p>
 
     <div class="page-header-line" style="opacity: 1; width: 120px; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
 
-    <div class="desc" style="color: rgb(147, 196, 78); opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Açıldığımız günden bugüne tüm tatlılarımız merkez mutfağımızdaki pastanemizde günlük olarak en kaliteli, en taze malzemelerle hazırlanmaktadır.</div>
-
+    <div class="desc" style="color: rgb(23, 42, 96); opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" ></div>
 
     <ul>
         <li><img src="kapkek.jpg" alt="kapkek" title="Kapkek" width="200px" height="200PX" onclick="this.src='kapkek.jpg ';this.height=500;this.width=500"></li>
