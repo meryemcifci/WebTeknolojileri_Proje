@@ -4,9 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RESFO</title>        
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); 
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body  {
+            font-family: 'Poppins', sans-serif;
+            background-color:gainsboro ;  
+            background-image: url(8.jpg);
+            background-size: cover;
+        
+        }
+        *{
+            color: black;
+        }
+        .container{
+            width:90%;
+            margin: auto;
+        }
+        /* header başla */
+        header{
+            height: 100px;
+            border-bottom: 2px solid black;
+        }
+        header nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        header nav .logo a{
+            color: black;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 60px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            column-gap: 30px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            transition: color .25s ease;
+        
+        }
+        nav ul li a:hover{
+           color:rgb(29, 77, 79)
+        }
+        #menu-content{
+            position: absolute;
+            z-index: 1;
+            display:none;
+            margin-top:15px;
+            margin-left: -15px;;
+        }
+        #menu-li:hover #menu-content{
+        display:block;
+        }
+        .menu ul{
+            column-gap: 15px;
+        }
+        .breadcrumbs{
+            padding:10px;
+            font-family: sans-serif;
+        
+        }
+        .breadcrumbs__item{
+            display: inline-block;
+        }
+         .breadcrumbs__item:not(:last-of-type)::after{
+            content: '\203a';
+            margin:0 5px;
+            color:#005f6a46
+        }
+         .breadcrumbs__link{
+            text-decoration: none;
+            color: #999;
+        }
+         .breadcrumbs__link:hover{
+            text-decoration:underline ;
+        }
+         .breadcrumbs__link--active{
+            color:#005f6a;
+            font-weight: 500;
+        }
+        
+        /* header son */
+        /* section başla */
+        .content{
+            color:black;
+            height:calc(100vh-100px) ;
+            padding-top: 150px;
+        }
+        .content h1{
+            color:#005f6a;
+            font-size: 65px;
+            text-align: center;
+        }
+        .content p{
+            color:rgba(30, 63, 74, 0.744);
+            font-size: 50px;
+            text-align: center;
+        }
+        .content p2{
+            color: #13313ce2;
+            font-size: 15px;
+            text-align:center;
+        }
+        /* card */
+        #section-1{
+            display: flex;
+            justify-content: space-around;
+            margin: 200px 0;
+        }
+        .card{
+            width:20%;
+            box-shadow:0 5px 9px 0 #005f6a;
+            border-radius: 6px;
+        }
+        /* section son 
+        */</style>
 </head>
 <body>
+    <!--!header başla-->
+    <header class="container">
+        <nav>
+            <div class="logo">
+                <h1><a href="logo"><img src="logo.png">
+            </div>
+                <ul>
+                    <li><a href ="anasayfa.html"><i class="fa-solid fa-house-user"></i>ANASAYFA</a></li>
+                    <li><a href ="hakkımızda.html"><i class="fa-solid fa-house-about"></i>HAKKIMIZDA</a></li>
+                    <li class="menu-li">
+                        <a href ="menü.html"><i class="fa-solid fa-house-menu"></i>MENÜ</a>
+                        <div id="menu-content">
+                            <ul>
+                                <li style="display: block;"><a href ="çileklimilföy">Çilekli Milföy</a><li>
+                                <li style="display: block;"><a href ="kapkek">Kapkek</a><li> 
+                                <li style="display: block;"><a href ="pankek">Pankek</a><li>
+                                <li style="display: block;"><a href ="ahududulutart">Ahududulu Tart</a><li>
+                                <li style="display: block;"><a href ="cevizlikek">Cevizli Kek</a><li></li>
+                            </ul> 
+                        </div>  
+                    </li>
+                    <li><a href ="albüm.html">ALBÜM</a></li>
+                    <li><a href ="iletişim.html">İLETİŞİM</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href=""class="breadcrumbs__link">ANASAYFA</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href=""class="breadcrumbs__link">HAKKIMIZDA</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href=""class="breadcrumbs__link">MENU</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href=""class="breadcrumbs__link">ALBÜM</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href=""class="breadcrumbs__link breadcrumbs__link--active">İLETİŞİM</a>
+            </li>
+        
+        </ul>
     
-</body>
+    </header>
+        <!--!header son -->
+        <!--!section başla-->
+        <section class="container content">
+            <h1> RESFO </h1>
+            <p>HOŞ GELDİNİZ </p>
+            <p2> Birbirinden güzel lezzetlerin yer aldığı RESFO eşsiz deneyimlerle dolu coğrafyasını keşfetmeniz için sizi bekliyor.</p2>
+        </section>
+                <!--!section son-->
+    </body>
+
 </html>
