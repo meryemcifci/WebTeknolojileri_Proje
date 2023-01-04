@@ -33,22 +33,20 @@
         nav a:hover {
         color: #5cb9e7;
         }
-        
-        img {
-        width: 500px;
-        height: 500px;
-        transition: 0.3s;
-        }
-
+     
         img:hover {
             opacity: 0.7;
         }
         div {
-        margin: 20px;
+        margin:20px;
         border: 1px solid #ccc;
         border-radius: 5px;
         overflow: hidden;
         }
+        ul {overflow:hidden;}
+        ul li {float:left; margin-right:20px;}
+        ul li img {border:2px solid #000;}
+        .clear {clear: both}
     </style>
                 
 </head>
@@ -65,19 +63,16 @@
 
       
     <div style="display: flex;">
-		
-		<img src="ahududulutart.jpg" alt="ahududulutart">
-		<img src="cevizlikek.jpg" alt="cevizlikek">
-		<img src="çileklimilföy.jpg" alt="çileklimilföy">
-		<img src="havuclukek.jpg" alt="havuclukek">
-		<img src="HC_0339.jpg" alt="HC_0339">
-		<img src="kapkek.jpg" alt="kapkek">
-		<img src="KestaneliKahveli-Cheesecake.jpg" alt="KestaneliKahveli-Cheesecake">
-		<img src="MGL5560.jpg" alt="MGL5560">
-        <img src="pankek.jpg" alt="Pankek">
-		<img src="pasta.jpg" alt="pasta">
-		<img src="tatlıtablo.jpg" alt="tatlıtablo">
-
+        <ul>
+            <li><img src="kapkek.jpg" alt="kapkek" title="Kapkek" width="200px" height="200PX" onclick="this.src='kapkek.jpg ';this.height=500;this.width=500"></li>
+            <li><img src="pankek.jpg" alt="pankek" title="Pankek" width="200px" height="200px"onclick="this.src='pankek.jpg ';this.height=500;this.width=500"></li>
+            <li><img src="ahududulutart.jpg" alt="ahududulutart" title="Ahududulu Tart" width="200px" height="200px" onclick="this.src='ahududulutart.jpg ';this.height=500;this.width=500"></li>
+            <li><img src="pasta.jpg" alt="pasta" title="Pasta" width="200px" height="200px"onclick="this.src='pasta.jpg ';this.height=500;this.width=500"></li>
+            <li><img src="cevizlikek.jpg" alt="cevizlikek" title="Cevizli Kek" width="200px" height="200px"onclick="this.src='cevizlikek.jpg ';this.height=500;this.width=500"></li>
+            <li><img src="çileklimilföy.jpg" alt="çileklimilföy" title="Çilekli Milföy" width="200px" height="200px"onclick="this.src='çileklimilföy.jpg ';this.height=500;this.width=500"></li>
+              <li class="clear"></li>
+         </ul>
+    
 	</div>
    
 </body>
